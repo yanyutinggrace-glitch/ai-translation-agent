@@ -25,7 +25,7 @@ with st.sidebar:
     st.header("⚙️ 系统设置")
     
     # 【修改2：在后台直接固定 API Key。请把下面引号里的内容换成你真实的 API Key！】
-    api_key = "817d320c2d094c9a9998d98f0f372f0f.2SS4FHzWvfyuxgBL" 
+    api_key = st.secrets["ZHIPU_API_KEY"] 
     
     model_name = st.selectbox("选择大模型", ["glm-4-flash", "glm-4"], index=0)
     
